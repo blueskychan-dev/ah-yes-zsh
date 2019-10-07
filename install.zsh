@@ -25,5 +25,9 @@ popd
 echo "Installin symlingz"
 ln -s $HOME/ah-yes-zsh/.commonrc $HOME/ah-yes-zsh/.zshrc $HOME/ah-yes-zsh/.p10k.zsh $HOME/.
 
+echo "nice"
+
+touch $HOME/.z
+
 echo "yez dis gud"
 
