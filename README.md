@@ -1,0 +1,9 @@
+# Ah yes zsh
+
+yez dis gud
+
+NO WARRANTY
+
+THIS IS PROVIDED AS-IS
+
+NO RESPONSIBILITY
