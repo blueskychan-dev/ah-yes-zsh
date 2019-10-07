@@ -169,3 +169,13 @@ fi
 if [ -f $HOME/.customizedrc ]; then
   source $HOME/.customizedrc
 fi
+
+ahYezPlzUpdateNao() {
+  local pwd=$(pwd)
+  cd $HOME/ah-yes-zsh
+  git pull
+  source $HOME/.zshrc
+  cd -- "$pwd"
+}
+
+
