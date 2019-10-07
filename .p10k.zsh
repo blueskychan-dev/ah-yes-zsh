@@ -100,7 +100,7 @@
       ranger                  # ranger shell (https://github.com/ranger/ranger)
       # vpn_ip                # virtual private network indicator
       ram                   # free RAM
-      load                  # CPU load
+      #load                  # CPU load
       # time                  # current time
       # =========================[ Line #2 ]=========================
       newline
