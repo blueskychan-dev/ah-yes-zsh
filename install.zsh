@@ -7,7 +7,7 @@ echo "Installin ah yes zsh"
 if hash yay 2>/dev/null >/dev/null; then
 
   echo "Installin necesary packagez"
-  yay -S \
+  yay -S --noconfirm \
     netkit-bsd-finger git coreutils openssh \
     thefuck
 
