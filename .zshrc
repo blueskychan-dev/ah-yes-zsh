@@ -80,6 +80,7 @@ plugins=(
         colorize
         cp
         docker
+        docker-compose
         emoji
         fancy-ctrl-z
         fd
