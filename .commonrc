@@ -1,6 +1,7 @@
 #!/bin/sh
 
 export EDITOR="/usr/bin/vim"
+export SUDO_EDITOR="/usr/bin/vim"
 
 # some more ls aliases
 alias ll='ls -alF'
