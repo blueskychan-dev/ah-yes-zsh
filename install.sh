@@ -11,7 +11,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 zsh -c "git clone https://github.com/romkatv/powerlevel10k.git $HOME/.oh-my-zsh/custom/themes/powerlevel10k"
 
 ./install.zsh
-chsh -s /bin/zsh
+sudo chsh -s /bin/zsh $USER
 zsh
 
 
