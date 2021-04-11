@@ -8,7 +8,7 @@ if hash yay 2>/dev/null >/dev/null; then
 
   echo "Installin necesary packagez"
   yay -S --noconfirm \
-    netkit-bsd-finger git coreutils openssh \
+    git coreutils openssh \
     thefuck
 
 else
