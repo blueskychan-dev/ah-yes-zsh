@@ -10,11 +10,6 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-if [[ "$(tty)" != *"/tty"* ]]; then
-  export COLORTERM=truecolor
-  export TERM=screen-256color
-fi
-
 # Don't use p10k on tty (doesn't look right)
 if [ `tput colors` != "256" ] || [[ "$(tty)" == *"/tty"* ]]; then
   export ZSH_THEME="clean"
