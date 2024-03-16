@@ -1,7 +1,7 @@
 #!/bin/sh
 
-export EDITOR="/usr/bin/vim"
-export SUDO_EDITOR="/usr/bin/vim"
+export EDITOR="/usr/bin/nano"
+export SUDO_EDITOR="/usr/bin/nano"
 
 # some more ls aliases
 alias ll='ls -alF'

@@ -3,7 +3,7 @@
 set -e
 
 cd $HOME
-git clone https://gitlab.com/xdevs23/ah-yes-zsh
+git clone https://github.com/windowz414/ah-yes-zsh
 cd ah-yes-zsh
 yay -S --noconfirm zsh
 
