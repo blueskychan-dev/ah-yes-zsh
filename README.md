@@ -1,9 +1,5 @@
 # Ah yes zsh
 
-yez dis gud
+Just zsh that i use in my main laptop (Arch Linux), So please do not ask anything...
 
-NO WARRANTY
-
-THIS IS PROVIDED AS-IS
-
-NO RESPONSIBILITY
+Also! Thanks [@stel-bl](https://github.com/stel-bl) For the idea and this fork too <3
