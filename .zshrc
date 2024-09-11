@@ -75,7 +75,6 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
         git
-        adb
         battery
         colorize
         cp
@@ -83,7 +82,6 @@ plugins=(
         docker-compose
         emoji
         fancy-ctrl-z
-        fd
         git-flow
         github
         gitignore
@@ -102,7 +100,6 @@ plugins=(
         pep8
         pip
         pj
-        ripgrep
         rsync
         shrink-path
         sudo
