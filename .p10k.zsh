@@ -36,11 +36,34 @@
     typeset -g ${1}_BOLD=true
   }
 
+# Define a custom segment to show OS icon
+function get_os_icon() {
+  local os_id=""
+  [[ -f /etc/os-release ]] && os_id=$(grep '^ID=' /etc/os-release | cut -d= -f2 | tr -d '"')
+
+  local icon=""
+  case "$os_id" in
+    arch)   icon=$'\uf303' ;;  # Arch
+    fedora) icon=$'\ue7d9' ;;   # Fedora
+    debian) icon=$'\ue77d' ;;   # Debian
+    ubuntu) icon=$'\uf0548' ;;  # Ubuntu
+    void)   icon=$'\uf32e' ;;   # Void
+    *)      icon=$'\uf17c' ;;   # Default: Tux
+  esac
+
+  # If inside Distrobox (CONTAINER_ID is non-empty), append (ﶕ)
+  if [[ -n "$CONTAINER_ID" ]]; then
+    icon+=" ("$'\ued95 '")"
+  fi
+
+  echo "$icon"
+}
+
+
   customize() {
     DEFAULT_DARK=232
 
-    # Arch icon
-    typeset -g POWERLEVEL9K_CUSTOM_OS_ICON="echo $'\uf303'"
+    typeset -g POWERLEVEL9K_CUSTOM_OS_ICON="get_os_icon"
     typeset -g POWERLEVEL9K_CUSTOM_OS_ICON_FOREGROUND=$DEFAULT_DARK
     typeset -g POWERLEVEL9K_CUSTOM_OS_ICON_BACKGROUND=005
     typeset -g POWERLEVEL9K_HOST_FOREGROUND=$DEFAULT_DARK
